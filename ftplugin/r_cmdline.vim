@@ -4,7 +4,7 @@ function! SourceRLines(lines)
 endfunction
 
 let b:cmdline_nl = "\n"
-let b:cmdline_app = "R"
+let b:cmdline_app = "R --no-save --no-restore-data --quiet"
 let b:cmdline_quit_cmd = "quit(save = 'no')"
 let b:cmdline_source_fun = function("SourceRLines")
 let b:cmdline_send_empty = 0
